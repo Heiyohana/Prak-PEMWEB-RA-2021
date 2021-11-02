@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Week Assignment</title>
+</head>
+
+<body id="body">
+    <label for="theme">Choose Your Theme :</label>
+    <!--Create a menu of choices for the website theme-->
+    <select class="selectColour" id="Colour" onchange="changeTheme()">
+        <option value="#">None</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="maroon">Maroon</option>
+        <option value="yellow">Yellow</option>
+        <option value="cyan">Cyan</option>
+    </select>
+
+    <div class="theme">
+        <script>
+            function changeTheme(){
+                var color = document.getElementById("Colour");
+                if (Colour.value=="black"){
+                    document.body.style.backgroundColor = "black";
+                    document.getElementById("body").style.color = "white";
+                }else if (Colour.value=="white"){
+                    document.body.style.backgroundColor = "white";
+                    document.getElementById("body").style.color = "black";
+                }else if (Colour.value=="maroon"){
+                    document.body.style.backgroundColor = "maroon";
+                    document.getElementById("body").style.color = "white";
+                }else if(Colour.value=="yellow"){
+                    document.body.style.backgroundColor = "yellow";
+                    document.getElementById("body").style.color = "black";
+                }else if (Colour.value=="cyan"){
+                    document.body.style.backgroundColor = "cyan";
+                    document.getElementById("body").style.color = "navy";
+                } else{
+                    document.body.style.backgroundColor = "white";
+                    document.getElementById("body").style.color = "black";
+                }
+            }
+        </script>
+    </div>
+
+    <h1>Hello, This is My Website!</h1>
+    <label for="mood">What is your mood right now?</label>
+    <!--Create a menu of choices for the User Mood-->
+    <select name="mood" id="mood" onchange="yourMood()">
+        <option value="#">select</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="giveUp">Give Up</option>
+        <option value="lost">Lost</option>
+    </select>
+
+    <p id="print"></p>
+    <div class="yourMood">
+        <script>
+            function yourMood(){
+                var yourmood=document.getElementById("mood");
+                if(yourmood.value=="happy"){
+                    var mood=document.getElementById("print");
+                    mood.innerText = "Good... Happiness is when you feel good about yourself without feeling the need for anyone else's approval. >.<";
+                }else if(yourmood.value=="sad"){
+                    var mood=document.getElementById("print");
+                    mood.innerText = "Hei, wake up! This life is a choice like a quiz. Whatever makes you sad, throw it away. And, whatever makes you smile, keep it in your hand.";
+                }else if(yourmood.value=="giveUp"){
+                    var mood=document.getElementById("print");
+                    mood.innerText = "Hei, listen this! When you want to give up, look at back and then see how far you have climbed to reach your goal.";
+                }else if(yourmood.value=="lost"){
+                    var mood=document.getElementById("print");
+                    mood.innerText = "Hei, please don't think like that! Never lost hope, because it is the key to achieve all your dreams";
+                }else{
+                    var mood=document.getElementById("print");
+                    mood.innerText = "Just do it, Always Grateful, and Pray for every step";
+                }
+            }
+        </script>
+    </div>
+
+    <div class="faktorial">
+        <p><strong>Input your number for calculate the faktorial : </strong></p>
+        <form>
+            <input type="text" name="" id="input">
+            <button id="button">Calculate</button>
+            <div id="demo"></div>
+        </form>
+
+        <script>
+            var input = document.getElementById("input")
+            var button = document.getElementById("button")
+            var demo = document.getElementById("demo")
+
+            button.addEventListener("click", function(num){
+                num.preventDefault();
+                var valueIn = input.value;
+                var result = 1;
+                for(var i = valueIn; i > 0; i--){
+                    result *=i;
+                }
+                demo.innerHTML = `The result is : ${result}`;
+            })
+        </script>
+    </div>
+</body>
+</html>
