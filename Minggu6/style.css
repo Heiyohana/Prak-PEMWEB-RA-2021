@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 1rem;
+    font-size: 40px;
+    width: auto;
+    height: auto;
+    display:flex;
+    align-items:center; /*Ini untuk membuat teks rata tengah dari margin atas dan bawah*/
+    background-size: 100%;
+}
+
+body{
+    background-image: linear-gradient(rgba(255, 102, 0, 0.37),
+    rgba(255, 179, 0, 0.692) ), url(./assets/Sunflower-Field.jpg);
+    font-family: ubuntu;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(0, 0, 0);
+    
+}
+
+.formulir{
+    background-color: rgba(23, 47, 78, 0.534);
+    width: 500px;
+    padding: 40px;
+    margin: 1% auto;
+    margin-top: 4%;
+    border: 2px rgba(15, 2, 58, 0.534) solid;
+}
+
+table {
+    margin: 0% auto;
+    width: 50%;
+  }
+  
+  td, th {
+    border: 3px solid #fffafa;
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(255, 239, 175);
+  }
