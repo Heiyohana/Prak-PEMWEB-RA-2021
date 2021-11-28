@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    width: auto;
+}
+header{
+    font-size: 50px;
+    font-family: 'Helvetica';
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+}
+
+nav{
+    background-color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    display: inline-block; 
+    text-decoration: none; /*Untuk menghapus underline dari link pada .navbar*/
+    cursor : pointer;
+    padding: 20px 50px;
+    color: rgb(45, 0, 168); 
+}
+
+.navbar a:hover {
+    background-color: #4040d3;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: auto;
+    background-image: url(../asset/backgroundOk.jpg);
+}
+
+body p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button{
+    background-color: rgb(40, 148, 190);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: white ;
+    color: rgb(45, 0, 168);
+}
+
+input a{
+    background-color: rgb(22, 35, 110);
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+table {
+    margin: 10px;
+    border: solid pt rgb(18, 10, 141);
+    font-size: 17px;
+}
+
+th {
+    background-color: rgb(45, 0, 168) ;
+    color: white;
+    padding: 10pt;
+}
+
+td {
+    background-color: #dff5ff ;
+    padding: 10pt;
+}
+
+tbody tr:hover {
+    background-color: #9e9eff;
+    color:rgb(43, 31, 153);
+}
+
+footer{
+    position: relative;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    line-height: 29px;
+    background: rgb(45, 0, 168);
+    bottom: 0px;
+    width: 92%;
+}
+
+footer a {
+    color : white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a:hover{
+    color: rgb(45, 0, 168);
+    background-color: rgb(255, 255, 255);
+}

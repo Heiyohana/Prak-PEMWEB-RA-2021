@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+}
+
+header{
+    font-size: 50px;
+    font-family: 'Helvetica';
+    height: 100px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    color: white;
+}
+
+nav{
+    background-color: white;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar a {
+    display: inline-block; 
+    text-decoration: none; /*Untuk menghapus underline dari link pada .navbar*/
+    cursor : pointer;
+    padding: 20px 50px;
+    color: rgb(45, 0, 168); /*Mewarnai */
+}
+
+.navbar a:hover {
+    background-color: #4040d3;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: auto;
+}
+
+.footer{
+    justify-content: center;
+    color: white;
+    text-align: center;
+    line-height: 29px;
+    background: rgb(45, 0, 168);
+    bottom: 0px;
+    position:relative;
+}
+
+.footer a {
+    color : white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a:hover{
+    color: rgb(45, 0, 168);
+    background-color: rgb(255, 255, 255);
+}
