@@ -1,0 +1,96 @@
+*{
+    font-family: "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    height: auto; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../Minggu4/asset/wallpaper.jpg);
+}
+
+.head{
+    background-color: rgb(229, 255, 182);
+    height: auto;
+    width: 100%;
+}
+
+h1.text{
+    font-size: 25px;
+}
+
+img.logo{
+    padding: 0 60px;
+}
+
+nav{
+    background-color: rgb(166, 255, 0);
+    height: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 10px #473f3faf;
+}
+
+.navbar a {
+    display: inline-block; 
+    text-decoration: none; /*Untuk menghapus underline dari link pada .navbar*/
+    cursor : pointer;
+    padding: 20px 50px;
+    color: rgb(48, 168, 0);
+}
+
+.navbar a:hover {
+    background-color: rgb(6, 168, 0);
+    color: white;
+}
+
+#content {
+    padding: 50px;
+    margin: auto;
+    font-size: 18px;
+}
+
+#content th{
+    padding: 12px 15px;
+    background-color:rgb(166, 255, 0);
+}
+
+#content tbody tr {
+    background-color: rgb(238, 255, 206);
+}
+
+#content td {
+    padding: 12px 15px;
+    font-size: 18px;
+}
+
+#content a{
+    text-decoration: none;
+    color: rgb(6, 168, 0);
+}
+
+#content a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+button{
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color:rgb(166, 255, 0);
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: all .2s;
+    z-index: 100;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.158);
+}
